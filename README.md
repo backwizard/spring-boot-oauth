@@ -10,7 +10,7 @@ git clone https://github.com/backwizard/spring-boot-oauth.git
 
 cd spring-boot-oauth
 
-./gradlew build && java -jar build/libs/spring-boot-oauth-0.1.1.jar
+gradle bootRun
 ```
 
 # Usage
