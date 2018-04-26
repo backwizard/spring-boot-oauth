@@ -1,12 +1,11 @@
 package com.example.service;
 
-import java.util.Optional;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 import com.example.model.User;
 
-public interface UserService {
+public interface UserService extends UserDetailsService {
 
-	public Optional<User> findById(Long id);
-	public User saveUser(User user);
+	public User saveUser(User user) throws RuntimeException;
 
 }
