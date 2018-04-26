@@ -17,7 +17,7 @@ cd spring-boot-oauth
 
 Registers a new user
 
-	(media/post.png)
+	#+html: <p align="center"><img src="media/post.png" /></p>
 
 Get user detail
 ** replace 'header.payload.signature' with authorization after register
