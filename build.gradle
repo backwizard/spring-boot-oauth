@@ -10,10 +10,10 @@ buildscript {
 	}
 }
 
-//jar {
-//	baseName = 'spring-boot-oauth'
-//	version = '0.1.1'
-//}
+jar {
+	baseName = 'spring-boot-oauth'
+	version = '0.1.1'
+}
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
