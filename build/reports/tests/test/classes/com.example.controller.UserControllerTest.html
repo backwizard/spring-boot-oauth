@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.example.controller.UserControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.controller.UserControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.controller.html">com.example.controller</a> &gt; UserControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.980s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">malformedSaveUser</td>
+<td>0.232s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">saveUser</td>
+<td>0.405s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">saveUserTooLessSalary</td>
+<td>0.031s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">verifyInvalidParam</td>
+<td>0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">verifyNullUser</td>
+<td>0.227s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">verifyUser</td>
+<td>0.052s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2018-04-26 20:36:47.663  INFO 14249 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.controller.UserControllerTest], using SpringBootContextLoader
+2018-04-26 20:36:47.664  INFO 14249 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.controller.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-04-26 20:36:47.664  INFO 14249 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-04-26 20:36:47.677  INFO 14249 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.SpringBootOauthApplication for test class com.example.controller.UserControllerTest
+2018-04-26 20:36:47.679  INFO 14249 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-26 20:36:47.683  INFO 14249 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6cbf440f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34152003, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7c79028d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@24a3d0c3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@32aa7764, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2f224c0a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b7b4e09, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2164a06d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4094e272, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7deba476, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c21b6c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@38421ee5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5fa2eced]
+2018-04-26 20:36:47.690  INFO 14249 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-04-26 20:36:47.690  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-26 20:36:47.695  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/register
+       Parameters = {}
+          Headers = {Content-Type=[application/json], Accept=[application/json]}
+
+Handler:
+             Type = com.example.controller.UserController
+           Method = public org.springframework.http.ResponseEntity&lt;com.example.model.Response&gt; com.example.controller.UserController.register(com.example.model.User,javax.servlet.http.HttpServletResponse) throws com.example.exception.HandlerException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;errorCode&quot;:400,&quot;message&quot;:&quot;Some fileds are missing!!&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2018-04-26 20:36:47.924  INFO 14249 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-04-26 20:36:47.924  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-26 20:36:47.927  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/register
+       Parameters = {}
+          Headers = {Content-Type=[application/json], Accept=[application/json]}
+
+Handler:
+             Type = com.example.controller.UserController
+           Method = public org.springframework.http.ResponseEntity&lt;com.example.model.Response&gt; com.example.controller.UserController.register(com.example.model.User,javax.servlet.http.HttpServletResponse) throws com.example.exception.HandlerException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = {Authorization=[Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VybmFtZSIsImV4cCI6MTUyNDc0OTg2OH0.dLw2ODI_suRH85WmeLiYZ2cwl2xXr7ZNeJlsT9cZaR-hVA8-BS47Rh68ItzN_3-hJCF-_PZDzvHMgD0fOGuo6g], Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;status&quot;:201,&quot;message&quot;:&quot;Register success&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2018-04-26 20:36:48.333  INFO 14249 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-04-26 20:36:48.333  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-26 20:36:48.337  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/register
+       Parameters = {}
+          Headers = {Content-Type=[application/json], Accept=[application/json]}
+
+Handler:
+             Type = com.example.controller.UserController
+           Method = public org.springframework.http.ResponseEntity&lt;com.example.model.Response&gt; com.example.controller.UserController.register(com.example.model.User,javax.servlet.http.HttpServletResponse) throws com.example.exception.HandlerException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.lang.IllegalArgumentException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;errorCode&quot;:400,&quot;message&quot;:&quot;Too less salary!&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2018-04-26 20:36:48.365  INFO 14249 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-04-26 20:36:48.365  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-26 20:36:48.370  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 5 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user
+       Parameters = {%20=[username]}
+          Headers = {Accept=[application/json], Authorization=[eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ4IiwiZXhwIjoxNTI0NzQ5ODY4fQ.kbxAQd44CAmgnnV5D1CKn0vIw36e02_TFlcUqUtPn9OCjFUMnfgcFpJp5rM9EaEU_-s9eAZO22v2zv6yJEDWeA]}
+
+Handler:
+             Type = com.example.controller.UserController
+           Method = public org.springframework.security.core.userdetails.UserDetails com.example.controller.UserController.getUser(java.lang.String) throws com.example.exception.HandlerException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MissingServletRequestParameterException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;errorCode&quot;:400,&quot;message&quot;:&quot;The request could not be understood by the server due to malformed syntax.&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2018-04-26 20:36:48.399  INFO 14249 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-04-26 20:36:48.400  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-26 20:36:48.407  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 7 ms
+2018-04-26 20:36:48.441  INFO 14249 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user
+       Parameters = {username=[xyz]}
+          Headers = {Accept=[application/json], Authorization=[eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ4IiwiZXhwIjoxNTI0NzQ5ODY4fQ.kbxAQd44CAmgnnV5D1CKn0vIw36e02_TFlcUqUtPn9OCjFUMnfgcFpJp5rM9EaEU_-s9eAZO22v2zv6yJEDWeA]}
+
+Handler:
+             Type = com.example.controller.UserController
+           Method = public org.springframework.security.core.userdetails.UserDetails com.example.controller.UserController.getUser(java.lang.String) throws com.example.exception.HandlerException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.security.core.userdetails.UsernameNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;errorCode&quot;:400,&quot;message&quot;:&quot;Username not found&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2018-04-26 20:36:48.628  INFO 14249 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-04-26 20:36:48.629  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-26 20:36:48.633  INFO 14249 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user
+       Parameters = {username=[username]}
+          Headers = {Accept=[application/json], Authorization=[eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ4IiwiZXhwIjoxNTI0NzQ5ODY4fQ.kbxAQd44CAmgnnV5D1CKn0vIw36e02_TFlcUqUtPn9OCjFUMnfgcFpJp5rM9EaEU_-s9eAZO22v2zv6yJEDWeA]}
+
+Handler:
+             Type = com.example.controller.UserController
+           Method = public org.springframework.security.core.userdetails.UserDetails com.example.controller.UserController.getUser(java.lang.String) throws com.example.exception.HandlerException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;id&quot;:1,&quot;username&quot;:&quot;username&quot;,&quot;password&quot;:&quot;$2a$10$WTRPuSa67ICgYegADWY1MeEoA0YRKmltChSI7IZKvT3AMJeNSaHFS&quot;,&quot;address&quot;:&quot;address&quot;,&quot;salary&quot;:50000.00,&quot;memberType&quot;:&quot;Gold&quot;,&quot;phone&quot;:&quot;0123456789&quot;,&quot;refCode&quot;:&quot;20180426789&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.5.1</a> at Apr 26, 2018 8:36:49 PM</p>
+</div>
+</div>
+</body>
+</html>
