@@ -17,16 +17,16 @@ cd spring-boot-oauth
 
 Registers a new user
 
-	#+html: <p align="center"><img src="media/post.png" /></p>
+	![image](https://user-images.githubusercontent.com/13384732/39311014-0fdeab88-4996-11e8-8120-456180c20b10.png)
 
 Get user detail
 ** replace 'header.payload.signature' with authorization after register
 
-	(media/get.png)
+	![image](https://user-images.githubusercontent.com/13384732/39311021-161feb60-4996-11e8-8c99-e00ffe9d37d3.png)
 
 
 # Design Concept
-
-    (media/design.png)
+	
+	![image](https://user-images.githubusercontent.com/13384732/39311030-1ac6f794-4996-11e8-80ed-7ebfbcf218b6.png)
 
 
