@@ -23,7 +23,6 @@ import io.jsonwebtoken.Jwts;
 
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
-
 	public JWTAuthorizationFilter(AuthenticationManager authenticationManager) {
 		super(authenticationManager);
 	}
@@ -37,31 +36,29 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 			chain.doFilter(request, response);
 			return;
 		}
-		
+
 		try {
 			UsernamePasswordAuthenticationToken authentication = getAuthentication(request);
 			SecurityContextHolder.getContext().setAuthentication(authentication);
 			chain.doFilter(request, response);
 		} catch (Exception e) {
-	        response.setHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_UTF8_VALUE);
-	        response.sendError(401, "Token Expired");
+			response.setHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_UTF8_VALUE);
+			response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Token Expired");
 		}
 	}
 
 	private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) throws ServletException {
 		String token = request.getHeader(HEADER_STRING);
-		
-		if (token == null) return null;
-		
+
+		if (token == null)
+			return null;
+
 		// parse the token.
-		String user = Jwts.parser()
-						.setSigningKey(SECRET.getBytes())
-						.parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
-						.getBody()
-						.getSubject();
+		String user = Jwts.parser().setSigningKey(SECRET.getBytes()).parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
+				.getBody().getSubject();
 		if (user == null) {
 			return null;
-			
+
 		}
 		return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
 	}
